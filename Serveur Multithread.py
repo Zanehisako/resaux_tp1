@@ -8,8 +8,8 @@ def Traiter_Connexion(connexion_avec_client,adresse_client):
    try:
       while(MessageRec.strip().lower()!="fin"):
           MessageRec=connexion_avec_client.recv(1024)
-          MessageRec=MessageRec
-          print( "Client" ,adresse_client," a dit :",MessageRec.decode())
+          MessageRec=MessageRec.decode()
+          print( "Client" ,adresse_client," a dit :",MessageRec)
    except:
       print( "Deconnexion")
    print( "Deconnexion de :",adresse_client)

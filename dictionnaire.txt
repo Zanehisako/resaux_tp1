@@ -1,0 +1,7 @@
+angle
+armoire
+banc
+bureau
+cabinet
+carreau
+chaise

@@ -15,8 +15,8 @@ while True: # boucle infinie
    print("Connexion de la machine = ", addrclient)
    MessageRec="" 
    while(MessageRec.strip().lower()!="fin"):# tanque le message recu est different de "fin"
-      MessageRec=ConnexionAUnClient.recv(1024) # recv permet de recevoir une sequence d'octets
-      print( MessageRec.decode())
+      MessageRec=ConnexionAUnClient.recv(1024).decode() # recv permet de recevoir une sequence d'octets
+      print(MessageRec)
       # .decode() transforme une objet bytes (suite d'octets) en chaine de caracteres en 
 
    print( "Deconnexion de :",addrclient)
